@@ -4,12 +4,9 @@ echo "-----------------------------------------------"
 echo "|                                              |"
 echo "| YOU ARE INSTALLING TOMCAT APPLICATION SERVER |"
 echo "-----------------------------------------------"
-echo Please provide the application user for installing the tomcat
-read user
-useradd -d /home/$user $user
+user = $1
+version = $2
 cd /home/$user
-echo Please provide the version of tomcat to be installed like "8.5" or "9"
-read version
 if [ $version == 9 ]
 then
 wget https://downloads.apache.org/tomcat/tomcat-9/v9.0.37/bin/apache-tomcat-9.0.37.tar.gz
