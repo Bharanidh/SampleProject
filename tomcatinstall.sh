@@ -18,4 +18,4 @@ wget https://downloads.apache.org/tomcat/tomcat-8/v8.5.57/bin/apache-tomcat-8.5.
 fi
 tar -xvf apache-tomcat*.tar.gz
 rm -rf apache-tomcat*.tar.gz
-mv apache-tomcat-* /home/$user/tomcat
+sudo mv apache-tomcat-* /home/$user/tomcat
