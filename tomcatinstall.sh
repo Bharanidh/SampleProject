@@ -19,4 +19,3 @@ fi
 tar -xvf apache-tomcat*.tar.gz
 rm -rf apache-tomcat*.tar.gz
 mv apache-tomcat-* tomcat
-chown -R $user:$user *
