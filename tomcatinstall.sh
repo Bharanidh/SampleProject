@@ -4,8 +4,8 @@ echo "-----------------------------------------------"
 echo "|                                              |"
 echo "| YOU ARE INSTALLING TOMCAT APPLICATION SERVER |"
 echo "-----------------------------------------------"
-user = `$1`
-version = `$2`
+user=$1
+version=$2
 sudo useradd -d /home/$user $user
 cd /home/$user
 if [ $version == 9 ]
